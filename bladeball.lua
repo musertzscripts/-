@@ -34,11 +34,9 @@ local MainWindow = Rayfield:CreateWindow({
    }
 })
 
+local CombatTab = MainWindow:CreateTab("Parry", 4483362458) -- Title, Image
 
-local Tab = MainWindow:CreateTab("Parry", 4483362458) -- Title, Image
-
-
-local Button = Tab:CreateButton({
+local Button = CombatTab:CreateButton({
    Name = "Auto Parry [BETA]",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/archangelmich/bladeball/refs/heads/main/beta.lua"))()

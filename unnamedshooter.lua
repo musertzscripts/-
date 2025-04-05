@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "swag hub | Unnamed Shooter",
+   Name = "zayne hub| Unnamed Shooter",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "setting up ui..",
    LoadingSubtitle = "by kazumi (@Musertz)",
@@ -22,9 +22,9 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "swag hub",
+      Title = "zayne",
       Subtitle = "key system",
       Note = "join the discord to get key: gg/qgunvTDUEe ", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file

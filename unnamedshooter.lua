@@ -18,7 +18,7 @@ local Window = Rayfield:CreateWindow({
 
    Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "gg/qgunvTDUEe", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Invite = "qgunvTDUEe", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
@@ -40,13 +40,6 @@ local Button = MainTab:CreateButton({
    Name = "Aimbot",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/aimlock.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Auto-Shoot [PC ONLY/MOBILE COMING SOON!]",
-   Callback = function()
-   loadstring(game:HttpGet("https://github.com/musertzscripts/dioqjefoiwejf/blob/main/beta.lua"))()
    end,
 })
 
@@ -73,11 +66,34 @@ local Button = OtherTab:CreateButton({
    end,
 })
 
-local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local CrossTab = Window:CreateTab("Crosshairs", 4483362458) -- Title, Image
 
-local Button = PlayerTab:CreateButton({
-   Name = "Inf Health [MIGHT NOT WORK]",
+local Button = CrossTab:CreateButton({
+   Name = "Remove Crosshair",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/infhealth.lua"))()
+   loadstring(HttpGet("https://raw.githubusercontent.com/musertzscripts/rakey/refs/heads/main/disablecrosshair.lua"))()
    end,
 })
+
+local Button = CrossTab:CreateButton({
+   Name = "simple crosshair",
+   Callback = function()
+   loadstring(HttpGet("https://raw.githubusercontent.com/musertzscripts/rakey/refs/heads/main/smiplecross.lua"))()
+   end,
+})
+
+local Button = CrossTab:CreateButton({
+   Name = "my crosshair",
+   Callback = function()
+   loadstring(HttpGet("https://raw.githubusercontent.com/musertzscripts/rakey/refs/heads/main/kaz.mus.crosshair.lua"))()
+   end,
+})
+
+local Button = CrossTab:CreateButton({
+   Name = "cross crosshair",
+   Callback = function()
+   loadstring(HttpGet("https://raw.githubusercontent.com/musertzscripts/rakey/refs/heads/main/cross.lua"))()
+   end,
+})
+
+local Label = CrossTab:CreateLabel("btw if you want to put your own crosshair join our server/go to channel #crosshair-sub/send the image of the crosshair ( make sure that its uploaded in rblx and set to public )/ send the image id / post / ( ALSO WE DO NOT ALLOW BYPASSED DECALS AS CROSSHAIRS!!! )", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
